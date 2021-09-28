@@ -26,15 +26,14 @@ public class LampadaSala extends Lampadas {
 
     @Override
     public void interagirLampada() {
-        if (funcionamento = true) {
-            {
-                if  (EstadoLampada = false) {
-                    setEstadoLampada(true);
-                } else {
-                    setEstadoLampada(false);
-                }
-            } 
-
+        if (funcionamento == true) {
+            if (EstadoLampada == false) {
+                setEstadoLampada(true);
+            } else {
+                setEstadoLampada(false);
+            }
+        } else {
+            System.out.println("AVISO: impossivel interagir, a lampada da sala esta inoperante");
         }
     }
 

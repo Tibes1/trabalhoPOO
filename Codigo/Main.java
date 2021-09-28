@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Casa casa[] = new Casa[10];
         Portas porta[] = new Portas[10];
-        PortaSala portaSala[] = new PortaSala[10];
-        LampadaSala lampadaSala[] = new LampadaSala[10];
+        PortaSala portaSala[] = new PortaSala[2];
+        LampadaSala lampadaSala[] = new LampadaSala[2];
         porta[1] = new Portas(1, "Cor", false);
         lampadaSala[1] = new LampadaSala(1, "Cor", false, false);
         portaSala[1] = new PortaSala(1, "Cor", false, false);
@@ -28,6 +28,22 @@ public class Main {
 
         portaSala[1].checarEstadoPorta();
 
+        System.out.println("----------------------//----------------------");
+
+        lampadaSala[1].checarEstadoLampada();
+
+        lampadaSala[1].interagirLampada();
+
+        lampadaSala[1].checarFuncionamentoLampada();
+
+        lampadaSala[1].concertarLampadaSala();
+
+        lampadaSala[1].checarFuncionamentoLampada();
+
+        lampadaSala[1].interagirLampada();
+
+        lampadaSala[1].checarEstadoLampada();
+        
         System.out.println("----------------------//----------------------");
 
         porta[1].checarEstadoPorta();
